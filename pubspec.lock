@@ -271,7 +271,7 @@ packages:
     description:
       path: "."
       ref: develop
-      resolved-ref: "5235f1b0246bd33972eee3d525d0fc756c2aff94"
+      resolved-ref: accb9997b912544caa8632c1e01f94ba8ccc0f0a
       url: "https://github.com/DanhDue/d3f_login.git"
     source: git
     version: "1.0.0+1"
@@ -280,7 +280,7 @@ packages:
     description:
       path: "."
       ref: develop
-      resolved-ref: "07b5ae74466aaff4b50493f4a5067d3527a511e6"
+      resolved-ref: "3af8f36d9732165dded445e4ca69944584cc763d"
       url: "https://github.com/DanhDue/d3f_shared.git"
     source: git
     version: "1.0.0+1"

@@ -1,10 +1,8 @@
-import 'package:d3f_login/routes/routes.dart';
-import 'package:d3f_login/translations/translations.dart';
 import 'package:d3f_modular/app_global_binding.dart';
 import 'package:d3f_modular/routes/links.dart';
 import 'package:d3f_modular/routes/middle_ware.dart';
 import 'package:d3f_modular/routes/routes.dart';
-import 'package:d3f_modular/translations/translations.dart';
+import 'package:d3f_modular/translations.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -17,8 +15,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    AppRoutes.pages.addAll(LoginAppRoutes.pages);
-    AppTranslation.translationsKeys.addAll(LoginTranslation.translationsKeys);
     return GetMaterialApp(
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -28,13 +24,13 @@ class MyApp extends StatelessWidget {
         highlightColor: Colors.transparent,
       ),
       debugShowCheckedModeBanner: false,
-      translationsKeys: AppTranslation.translationsKeys,
+      translationsKeys: AppGlobalTranslation.mergeTranslationKeys(),
       locale: const Locale('vi', 'VI'),
       fallbackLocale: const Locale('vi', 'VI'),
       initialBinding: AppGlobalBinding(),
       initialRoute: AppLinks.splash,
       routingCallback: (routing) => MiddleWare.observer,
-      getPages: AppRoutes.pages,
+      getPages: AppRoutes.mergeRoutes(),
     );
   }
 }
