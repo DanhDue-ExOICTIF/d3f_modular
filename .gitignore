@@ -47,8 +47,8 @@ app.*.map.json
 .fvm/
 
 # Generated files.
-*.g.dart
-*.freezed.dart
+#*.g.dart
+#*.freezed.dart
 # remove all file from the generated folder excluded the locales.g.dart file.
-/lib/generated/*
-!/lib/generated/locales.g.dart
+#/lib/generated/*
+#!/lib/generated/locales.g.dart
