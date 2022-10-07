@@ -5,6 +5,7 @@ import 'package:d3f_modular/routes/routes.dart';
 import 'package:d3f_modular/translations.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:fimber/fimber.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
       fallbackLocale: const Locale('vi', 'VI'),
       initialBinding: AppGlobalBinding(),
       initialRoute: AppLinks.splash,
-      routingCallback: (routing) => MiddleWare.observer,
+      routingCallback: (routing) => MiddleWare.observer(routing),
       getPages: AppRoutes.mergedRoutes(),
     );
   }
