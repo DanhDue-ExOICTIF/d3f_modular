@@ -1,11 +1,15 @@
 import 'package:d3f_login/routes/links.dart';
 import 'package:fimber/fimber.dart';
 import 'package:get/get.dart';
+import 'package:d3f_login/routes/middle_ware.dart' as login;
+import 'package:d3f_inapp_purchase/routes/middle_ware.dart' as inappPurchase;
 
 import 'links.dart';
 
 class MiddleWare extends GetMiddleware {
   static observer(Routing? routing) {
+    login.LoginMiddleWare.observer(routing);
+    inappPurchase.InAppPurchaseMiddleWare.observer(routing);
     switch (routing?.current) {
       case AppLinks.tokenIsExpired: {
         Fimber.d('MiddleWare.observer() - AppLinks.tokenIsExpired');

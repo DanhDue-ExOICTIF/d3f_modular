@@ -9,7 +9,7 @@ class AppRoutes {
     GetPage(name: AppLinks.splash, page: () => const SplashPage()),
   ];
 
-  static List<GetPage>? mergeRoutes() {
+  static List<GetPage>? mergedRoutes() {
     pages.addAll(LoginAppRoutes.pages);
     return pages;
   }

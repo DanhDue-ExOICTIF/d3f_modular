@@ -50,6 +50,7 @@ dev_dependencies:
   hive_generator: ^1.1.3
   freezed: ^2.1.0+1
   flutter_gen_runner: ^5.0.1
+  get_cli: ^0.2.30
 
 flutter_gen:
   output: lib/generated/ # Optional (default: lib/gen/)
@@ -63,37 +64,10 @@ flutter_gen:
 
   assets:
     enabled: true
-
     outputs:
       class_name: MyAssets
       package_parameter_enabled: false
-      # Assets.imagesChip
-      # style: camel-case
-
-      # Assets.images_chip
-      # style: snake-case
-
-      # Assets.images.chip (default style)
       style: dot-delimiter
-
-#    exclude:
-#      - assets/images/chip3/chip3.jpg
-#      - pictures/chip5.jpg
-#      - assets/flare/
-
-#  fonts:
-#    enabled: true
-#    outputs:
-#      class_name: MyFontFamily
-
-#  colors:
-#    enabled: true
-#    outputs:
-#      class_name: MyColorName
-#    inputs:
-#      - assets/color/colors.xml
-#      - assets/color/colors2.xml
-#      - assets/color/colors2.xml # duplicated
 
 flutter:
 

@@ -24,13 +24,13 @@ class MyApp extends StatelessWidget {
         highlightColor: Colors.transparent,
       ),
       debugShowCheckedModeBanner: false,
-      translationsKeys: AppGlobalTranslation.mergeTranslationKeys(),
+      translationsKeys: AppGlobalTranslation.mergedTranslationKeys(),
       locale: const Locale('vi', 'VI'),
       fallbackLocale: const Locale('vi', 'VI'),
       initialBinding: AppGlobalBinding(),
       initialRoute: AppLinks.splash,
       routingCallback: (routing) => MiddleWare.observer,
-      getPages: AppRoutes.mergeRoutes(),
+      getPages: AppRoutes.mergedRoutes(),
     );
   }
 }
