@@ -3,9 +3,11 @@ import 'package:d3f_modular/routes/links.dart';
 import 'package:d3f_modular/routes/middle_ware.dart';
 import 'package:d3f_modular/routes/routes.dart';
 import 'package:d3f_modular/translations.dart';
+import 'package:d3f_shared/styles/d3f_theme_extension.dart';
+import 'package:d3f_shared/utils/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:fimber/fimber.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,18 +18,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+        const SystemUiOverlayStyle(statusBarColor: Colors.transparent));
+
     return GetMaterialApp(
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        backgroundColor: Colors.white,
-        scaffoldBackgroundColor: Colors.white,
-        splashColor: Colors.transparent,
-        highlightColor: Colors.transparent,
-      ),
+          brightness: Brightness.light, extensions: D3FThemeExtension.themes),
       debugShowCheckedModeBanner: false,
       translationsKeys: AppGlobalTranslation.mergedTranslationKeys(),
-      locale: const Locale('vi', 'VI'),
-      fallbackLocale: const Locale('vi', 'VI'),
+      locale: AppConstants.vnVI,
+      fallbackLocale: AppConstants.vnVI,
       initialBinding: AppGlobalBinding(),
       initialRoute: AppLinks.splash,
       routingCallback: (routing) => MiddleWare.observer(routing),
