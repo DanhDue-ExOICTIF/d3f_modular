@@ -34,7 +34,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   d3f_dependency_manager:
     git:
-      url: https://github.com/DanhDue/d3f_dependency_manager.git
+      url: https://github.com/DanhDue-ExOICTIF/d3f_dependency_manager.git
       ref: develop
 
 dev_dependencies:
