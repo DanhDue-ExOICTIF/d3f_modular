@@ -18,7 +18,7 @@ class SplashPage extends HookWidget {
         return Scaffold(
           backgroundColor: Colors.white,
           body: Center(
-            child: Lottie.asset('packages/d3f_shared/${MyAssets.lotties.splashAnimation.path}',
+            child: Lottie.asset(SharedAssets.lotties.splashAnimation.path,
                 controller: _animationController, onLoaded: (composition) {
               _animationController
                 ..duration = composition.duration
