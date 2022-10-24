@@ -1,3 +1,5 @@
+// ignore_for_file: depend_on_referenced_packages
+
 import 'package:d3f_modular/app_global_binding.dart';
 import 'package:d3f_modular/routes/links.dart';
 import 'package:d3f_modular/routes/middle_ware.dart';
