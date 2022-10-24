@@ -1,3 +1,5 @@
+// ignore_for_file: depend_on_referenced_packages
+
 import 'package:d3f_login/routes/routes.dart';
 import 'package:d3f_modular/screens/splash/splash_page.dart';
 import 'package:get/get.dart';

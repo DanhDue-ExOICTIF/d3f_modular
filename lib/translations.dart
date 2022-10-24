@@ -1,3 +1,5 @@
+// ignore_for_file: depend_on_referenced_packages
+
 import 'package:d3f_inapp_purchase/generated/locales.g.dart' as inappPurchase;
 import 'package:d3f_login/generated/locales.g.dart' as login;
 import 'package:d3f_modular/generated/locales.g.dart';
