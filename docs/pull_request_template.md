@@ -1,7 +1,7 @@
 ## Related Tickets
 - [Jira ticket link](https://bidv-vn.atlassian.net/jira/software/c/projects/SMAR/boards/29)
 
-## What's this PR do?
+## What's this PR to do?
 - [ ] Implement function A
 - [ ] Fix bugs on function B
 
@@ -13,7 +13,7 @@
 - Ex: google-analysis.js
 
 ## Impacted Areas in Application
-*(List features, api, models or services will be affected)*
+*(List features, APIs, models or services will be affected)*
 - Ex: foo/bar
 
 ## screenshot (optional)
