@@ -6,7 +6,7 @@
 - [ ] Fix bugs on function B
 
 ## Checklist
-- [ ] It was tested in local success?
+- [ ] It was tested with local success?
 
 ## Library
 *(Third-party libraries is added)*
