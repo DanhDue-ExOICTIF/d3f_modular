@@ -1,9 +1,24 @@
 {
     "dart.flutterSdkPath": ".fvm/flutter_sdk",
     "search.exclude": {
-      "**/.fvm": true
+      "**/.fvm": true,
+      "**/.android": true,
+      "**/.dart_tool": true,
+      "**/.ios": true,
+      "**/.idea": true
     },
     "files.watcherExclude": {
-      "**/.fvm": true
+      "**/.fvm": true,
+      "**/.android": true,
+      "**/.dart_tool": true,
+      "**/.ios": true,
+      "**/.idea": true
+    },
+    "files.exclude": {
+      "**/.fvm": true,
+      "**/.android": true,
+      "**/.dart_tool": true,
+      "**/.ios": true,
+      "**/.idea": true
     }
 }
