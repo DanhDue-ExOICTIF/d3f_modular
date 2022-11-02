@@ -1,10 +1,10 @@
 // ignore_for_file: depend_on_referenced_packages
 
-import 'package:d3f_login/routes/links.dart';
+import 'package:d3f_login/app/routes/links.dart';
 import 'package:fimber/fimber.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:d3f_login/routes/middle_ware.dart' as login;
+import 'package:d3f_login/app/routes/middle_ware.dart' as login;
 import 'package:d3f_inapp_purchase/routes/middle_ware.dart' as inappPurchase;
 
 import 'links.dart';
