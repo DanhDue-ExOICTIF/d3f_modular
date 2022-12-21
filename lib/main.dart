@@ -24,8 +24,7 @@ class MyApp extends StatelessWidget {
         const SystemUiOverlayStyle(statusBarColor: Colors.transparent));
 
     return GetMaterialApp(
-      theme: ThemeData(
-          brightness: Brightness.light, extensions: D3FThemeExtension.themes),
+      theme: ThemeData(brightness: Brightness.light, extensions: D3FThemeExtension.themes),
       debugShowCheckedModeBanner: false,
       translationsKeys: AppGlobalTranslation.mergedTranslationKeys(),
       locale: AppConstants.vnVI,
