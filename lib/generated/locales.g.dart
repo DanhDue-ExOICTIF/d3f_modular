@@ -16,9 +16,9 @@ class LocaleKeys {
 
 class Locales {
   static const vn_VI = {
-    'homePageTitle': 'ABC - Trang chủ',
+    'homePageTitle': 'Đăng nhập - Trang chủ',
   };
   static const en_US = {
-    'homePageTitle': 'ABC - Home Page',
+    'homePageTitle': 'Login - Home Page',
   };
 }
